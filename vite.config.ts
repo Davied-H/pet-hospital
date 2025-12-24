@@ -7,5 +7,5 @@ export default defineConfig({
   // GitHub Pages 部署时需要设置 base 路径
   // 如果部署到 https://<USERNAME>.github.io/<REPO>/ 需要设置为 '/<REPO>/'
   // 如果部署到 https://<USERNAME>.github.io/ 可以设置为 '/'
-  base: '/pet-hospital/',
+  base: '/',
 })

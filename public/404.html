@@ -6,13 +6,8 @@
     <script>
       // GitHub Pages SPA 重定向
       // 将 404 请求重定向到 index.html，保留路径信息
-      const path = window.location.pathname;
-      const repo = '/pet-hospital';
-      if (path.startsWith(repo)) {
-        const route = path.slice(repo.length) || '/';
-        sessionStorage.setItem('redirect', route + window.location.search);
-        window.location.replace(repo + '/');
-      }
+      sessionStorage.setItem('redirect', window.location.pathname + window.location.search);
+      window.location.replace('/');
     </script>
   </head>
   <body>
